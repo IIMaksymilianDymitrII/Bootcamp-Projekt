@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bokningar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="/" class="logo">
-                <img src="" alt="logo">
+        <nav id="navbar">
+            <a href="/"  >
+                <img style="background-color: black;" id="logo" src="/IMG/Misclean_logo_bild_vit_utan_bakgrund.png" alt="logo">
             </a>
             <ul>
                 <li><a href="/">Hem</a></li>
@@ -57,7 +57,7 @@
                 </nav>
             </section>
 
-            <section id="form" §>
+            <section id="form">
                 <form action="">
                     <div>
                         <label for="name">Namn</label>
@@ -75,9 +75,11 @@
                         <label for="service">Typ av tjänst</label>
                         <select id="service" name="service" required>
                             <option value="">Välj en tjänst</option>
-                            <option value="hemstadning">Hemstädning</option>
-                            <option value="flyttstadning">Flyttstädning</option>
-                            <option value="foretagsstadning">Företagsstädning</option>
+                            <option value="hemstädning">Hemstädning</option>
+                            <option value="flyttstädning">Flyttstädning</option>
+                            <option value="fönsterputsning">Fönsterputsning</option>
+                            <option value="kontorstädning">Kontorstädning</option>
+                            <option value="byggstädning">Byggstädning</option>
                         </select>
                     </div>
                     <div>
@@ -94,7 +96,9 @@
     </main>
     <footer>
         <section>
-            <a href="/"><img src="" alt="logo"></a>
+            <a href="/">
+                <img style="background-color: black;" src="/IMG/Misclean_logo_bild_vit_utan_bakgrund.png" alt="logo">
+            </a>
         </section>
         <section>
             <h4>Info</h4>
@@ -173,35 +177,41 @@
                 <ul>
                     <li>
                         <a href="">
-                            <img src="" alt="Telefon">
-                            <p></p>
+                            <img src="/IMG/phone.png" alt="Telefon">
+                            <p><strong>Telefon</strong>
+                            0765523840</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="E-post">
-                            <p></p>
+                            <img src="/IMG/mail.png" alt="E-post">
+                            <p><strong>E-Post</strong>
+                            info@misclean.se</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="Address">
-                            <p></p>
+                            <img src="/IMG/address.png" alt="Address">
+                            <p>
+                                <strong>Address</strong>
+                            Tenstavägen 10
+                            163 61 Spånga
+                        </p>
                         </a>
                     </li>
-                </ul>
+                </ul>l>
             </nav>
         </section>
         <section>
             <a href="">
-                <p></p>
+                <p>MisClean</p>
             </a>
             <a href="">
-                <p></p>
+                <p>Integritetspolicy</p>
             </a>
 
             <a href="">
-                <p></p>
+                <p>Stolt partner till Offerta</p>
             </a>
         </section>
     </footer>
