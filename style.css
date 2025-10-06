@@ -84,12 +84,12 @@ animation-iteration-count: infinite;
 }
 
 @keyframes text{
-0%{color: darkmagenta;}
-25%{color:coral}
-50%{color: lightpink;}
-75%{color: coral;}
-95%{color: pink;}
-100%{color: darkmagenta}
+0%{color: #FC809F;}
+25%{color:#FF9CB5}
+50%{color: #FFC9D7;}
+75%{color: #FF9CB5;}
+95%{color: #FFC9D7;}
+100%{color: #FC809F}
 }
 
 
