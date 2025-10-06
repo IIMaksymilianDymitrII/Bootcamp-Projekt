@@ -2,6 +2,122 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+nav{
+display: flex;
+justify-content: center;
+margin: auto;
+position: absolute;
+top: 10px;
+width: 40%;
+height: 35px;
+backdrop-filter: blur(10px);
+border-radius: 2dvh;
+box-shadow: 1px 1px 10px #ffffff;
+}
+
+nav ul{
+
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li{
+   list-style: none;
+}
+
+nav ul li a{
+color: #fff;
+text-decoration:none;
+font-size: 20px;
+
+}
+
+nav ul li a:hover{
+
+color: #ff9cb5;
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+padding: 1em;
+background-image: url(herooverlay.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-color: rgba(128, 56, 106, 0.4);
+background-blend-mode: darken;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.text{
+
+width: 60%;
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1em;
+}
+
+.text h1{
+    font-size: 5em;
+color:#fff
+
+}
+
+.text span{
+color: pink;
+animation-name: text;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes text{
+0%{color: #FC809F;}
+25%{color:#FF9CB5}
+50%{color: #FFC9D7;}
+75%{color: #FF9CB5;}
+95%{color: #FFC9D7;}
+100%{color: #FC809F}
+}
+
+
+.text p{
+    color: #ffe9ef;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.text button{
+    padding: 0.5em 2em;
+    margin: 2em 0 0 0;
+    background-color: #FC809F;
+    border: none;
+    border-radius: 10px;
+    color: #fafafa;
+    font-size: 1.5em;
+    box-shadow: 1px 1px 3px #FC809F;
+    transition: all .3s ease-in-out;
+}
+
+.text button:hover{
+    box-shadow: none;
+    transform: scale(1.1)
+}*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 font-family: arial;
 
 }
@@ -90,12 +206,12 @@ animation-iteration-count: infinite;
 }
 
 @keyframes text{
-0%{color: darkmagenta;}
-25%{color:coral}
-50%{color: lightpink;}
-75%{color: coral;}
-95%{color: pink;}
-100%{color: darkmagenta}
+0%{color: #FC809F;}
+25%{color:#FF9CB5}
+50%{color: #FFC9D7;}
+75%{color: #FF9CB5;}
+95%{color: #FFC9D7;}
+100%{color: #FC809F}
 }
 
 
@@ -119,4 +235,61 @@ animation-iteration-count: infinite;
 .text button:hover{
     box-shadow: none;
     transform: scale(1.1)
+}
+nav ul li{
+   list-style: none;
+}
+
+nav ul li a{
+color: #fff;
+text-decoration:none;
+font-size: 20px;
+
+}
+
+nav ul li a:hover{
+
+color: #ff9cb5;
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+padding: 1em;
+background-image: url(herooverlay.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-color: rgba(128, 56, 106, 0.4);
+background-blend-mode: darken;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.text{
+
+width: 60%;
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1em;
+}
+
+.text h1{
+    font-size: 5em;
+color:#fff
+
+}
+
+.text span{
+color: pink;
+animation-name: text;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+
 }
