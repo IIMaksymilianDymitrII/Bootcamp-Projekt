@@ -1,8 +1,122 @@
-* {
+*{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: arial;
 
 }
 
+nav{
+display: flex;
+justify-content: center;
+margin: auto;
+position: absolute;
+top: 10px;
+width: 70%;
+height: 50px;
+backdrop-filter: blur(10px);
+border-radius: 1dvh;
+box-shadow: 1px 1px 10px #fff;
+}
 
+nav ul{
+
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li{
+   list-style: none;
+}
+
+nav ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 1em;
+
+}
+
+nav ul li a:hover{
+
+color: palevioletred;
+}
+
+.logo{
+    width: 3%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+padding: 1em;
+background-image: url(herooverlay.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-color: rgb(0, 0, 0, 0.4);
+background-blend-mode: darken;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.text{
+
+width: 60%;
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1em;
+}
+
+.text h1{
+color:#fff
+font-size: 5em;
+  
+}
+
+.text span{
+color: pink;
+animation-name: text;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes text{
+0%{color: darkmagenta;}
+25%{color:coral}
+50%{color: lightpink;}
+75%{color: coral;}
+95%{color: pink;}
+100%{color: darkmagenta}
+}
+
+
+.text p{
+    color: lightcoral;
+    font-size: 1em;
+}
+
+.text button{
+    padding: 0.5em 2em;
+    margin: 2em 0 0 0;
+    background-color: darkmagenta;
+    border: none;
+    border-radius: 10px;
+    color: #fafafa;
+    font-size: 1.5em;
+    box-shadow: 1px 1px 3px darkmagenta;
+    transition: all .3s ease-in-out;
+}
+
+.text button:hover{
+    box-shadow: none;
+    transform: scale(1.1)
+}
