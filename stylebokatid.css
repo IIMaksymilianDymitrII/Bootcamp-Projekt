@@ -54,7 +54,7 @@ width: 100%;
       align-items: center;
       justify-content: flex-start;
       gap: 2rem;
-    background-image: url(herooverlay.jpg); 
+    background-image: url(IMG/herooverlay.jpg); 
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center; 
