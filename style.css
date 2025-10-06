@@ -2,7 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: arial;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
 
@@ -12,17 +12,17 @@ justify-content: center;
 margin: auto;
 position: absolute;
 top: 10px;
-width: 70%;
-height: 50px;
+width: 40%;
+height: 35px;
 backdrop-filter: blur(10px);
-border-radius: 1dvh;
-box-shadow: 1px 1px 10px #fff;
+border-radius: 2dvh;
+box-shadow: 1px 1px 10px #ffffff;
 }
 
 nav ul{
 
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 nav ul li{
@@ -31,20 +31,14 @@ nav ul li{
 
 nav ul li a{
 color: #fff;
-text-decoration: none;
-font-size: 1em;
+text-decoration:none;
+font-size: 20px;
 
 }
 
 nav ul li a:hover{
 
-color: palevioletred;
-}
-
-.logo{
-    width: 3%;
-    height: auto;
-    border-radius: 50px;
+color: #ff9cb5;
 }
 
 .hero{
@@ -55,7 +49,7 @@ background-image: url(herooverlay.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-background-color: rgb(0, 0, 0, 0.4);
+background-color: rgba(128, 56, 106, 0.4);
 background-blend-mode: darken;
 display: flex;
 flex-direction: column;
@@ -76,9 +70,9 @@ gap: 1em;
 }
 
 .text h1{
+    font-size: 5em;
 color:#fff
-font-size: 5em;
-  
+
 }
 
 .text span{
@@ -100,19 +94,20 @@ animation-iteration-count: infinite;
 
 
 .text p{
-    color: lightcoral;
+    color: #ffe9ef;
     font-size: 1em;
+    font-style: italic;
 }
 
 .text button{
     padding: 0.5em 2em;
     margin: 2em 0 0 0;
-    background-color: darkmagenta;
+    background-color: #FC809F;
     border: none;
     border-radius: 10px;
     color: #fafafa;
     font-size: 1.5em;
-    box-shadow: 1px 1px 3px darkmagenta;
+    box-shadow: 1px 1px 3px #FC809F;
     transition: all .3s ease-in-out;
 }
 
