@@ -7,9 +7,9 @@
 
 ### Main Objectives (mostly for me)
 
-[] responsive design
-[] keyboard navigation
-[] following WCAG 2.2
+[✅] responsive design
+[✅] keyboard navigation (works not best but works)
+[] following WCAG 2.2 (letter color is to close to the color of the bg)
 [] calculator for counting the price
 [] creating a json file with info
 [] form js
