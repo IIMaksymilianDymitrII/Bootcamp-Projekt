@@ -1,83 +1,90 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MisClean - A Bootcamp Project</title>
-    <link rel="shortcut icon" href="IMG/Misclean_logo_bild_vit_utan_bakgrund.png"type="favicon">
-
-    <link rel="stylesheet" href="stylebokatid.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MisClean - A Bootcamp Project</title>
+  <link rel="shortcut icon" href="IMG/Misclean_logo_bild_vit_utan_bakgrund.png" type="favicon">
+  <link rel="stylesheet" href="stylebokatid.css">
 </head>
 
 <body>
-    <header>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="/">Hem</a></li>
-      <li><a href="">Tjänster</a></li>
-      <li><a href="/bokningar.html">Boka tid</a></li>
-      <li><a href="">Om Oss</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <nav id="main-nav">
+      <button id="menu-btn-booking">
+        <img src="/IMG/hamburger.png" alt="Menu">
+      </button>
+      <ul>
+        <li><a href="/">Hem</a></li>
+        <li><a href="">Tjänster</a></li>
+        <li><a href="/bokningar.html">Boka tid</a></li>
+        <li><a href="">Om Oss</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main id="hero">
-  <section id="title">
-    <h1>Boknings formulär</h1>
-  </section>
-
-  <section id="info">
-    <div id="info-title">
-      <h2>Få en kostnadsfri offert</h2>
-      <p>Fyll i vårt formulär och berätta vad du önskar hjälp med så återkommer vi med en offert till dig så snart vi kan.</p>
-      <br>
-    </div>
-
-    <section id="form">
-      <form action="">
-        <div>
-          <label for="name">Namn</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">E-post</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="phone">Telefonnummer</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div>
-          <label for="service">Typ av tjänst</label>
-          <select id="service" name="service" required>
-            <option value="">Välj en tjänst</option>
-            <option value="hemstadning">Hemstädning</option>
-            <option value="flyttstadning">Flyttstädning</option>
-            <option value="foretagsstadning">Företagsstädning</option>
-          </select>
-        </div>
-        <div>
-          <label for="date">Önskat datum</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-        <div>
-          <label for="message">Meddelande</label>
-          <textarea id="message" name="message" rows="4"></textarea>
-        </div>
-        <button type="submit">Skicka</button>
-      </form>
+  <main>
+    <section id="title">
+      <h1>Boknings formulär</h1>
     </section>
-  </section>
 
-  <div class="contact-cards">
+    <section id="info">
+      <div id="info-title">
+        <h2>Få en kostnadsfri offert</h2>
+        <p>Fyll i vårt formulär och berätta vad du önskar hjälp med så återkommer vi med en offert till dig så snart vi
+          kan.</p>
+        <br>
+      </div>
+
+      <section id="form">
+        <form action="">
+          <div>
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="service">Typ av tjänst</label>
+            <select id="service" name="service" required>
+              <option value="">Välj en tjänst</option>
+              <option value="hemstadning">Hemstädning</option>
+              <option value="flyttstadning">Flyttstädning</option>
+              <option value="foretagsstadning">Företagsstädning</option>
+            </select>
+          </div>
+          <div>
+            <label for="living-area">Boarea</label>
+            <input type="number" id="living-area" name="living-area" placeholder="Antal kvm" required>
+          </div>
+          <div>
+            <label for="date">Önskat datum</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div>
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit">Skicka</button>
+        </form>
+      </section>
+    </section>
+
+    <div id="contact-cards">
       <div>
         <h5>Har du frågor?</h5>
         <h2>Kontakta Oss</h2>
       </div>
 
-      <div class="contacts">
+      <div id="contacts">
         <div class="contact">
-      <img src="/IMG/phone.png" alt="Telefon">
+          <img src="/IMG/phone.png" alt="Telefon">
           <h3>Telefon</h3>
           <p>08-123 45 67</p>
         </div>
@@ -93,12 +100,12 @@
         </div>
       </div>
     </div>
-</main>
+  </main>
 
-    <footer>
-            <p>© MisClean - Alla rättigheter reserverade</p>
-    </footer>
-
+  <footer>
+    <p>© MisClean - Alla rättigheter reserverade</p>
+  </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

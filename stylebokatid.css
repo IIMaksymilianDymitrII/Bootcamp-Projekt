@@ -1,204 +1,267 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
-} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
-header{ 
-    width: 100%; 
-    display: flex; 
-    justify-content: center; 
-    z-index: 10; 
-} 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
 
-nav.main-nav{ 
-    display: flex; 
-    justify-content: center; 
-    margin: auto; 
-    position: absolute; 
-    top: 10px; 
-    width: 40%; 
-    height: 35px; 
-    backdrop-filter: blur(10px); 
-    border-radius: 2dvh; 
-    box-shadow: 1px 1px 10px #ffffff; 
-} 
+#main-nav {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    width: 480px;
+    height: 35px;
+    backdrop-filter: blur(10px);
+    border-radius: 2dvh;
+    box-shadow: 1px 1px 10px #ffffff;
 
-nav.main-nav ul{ 
-    display: flex; 
-    gap: 2.5rem; 
-    align-items: center; 
-    height: 100%; 
-} 
+}
 
-nav.main-nav ul li{
-     list-style: none; 
-} 
+#main-nav ul {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    height: 100%;
+}
 
-nav.main-nav ul li a{
-     color: #fff; 
-     text-decoration:none; 
-     font-size: 20px; 
-} 
-    
-#nav ul li a:hover{
-     color: #ff9cb5; 
-} 
-    
-#hero{
-width: 100%;
-      padding: 3rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 2rem;
-    background-image: url(IMG/herooverlay.jpg); 
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position: center; 
-    background-color: #80386a66; 
-    background-blend-mode: darken; 
+#main-nav ul li {
+    list-style: none;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#nav ul li a:hover {
+    color: #ff9cb5;
+}
+
+main {
+    width: 100%;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-image: url(IMG/herooverlay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #80386a66;
+    background-blend-mode: darken;
     display: flex;
 }
 
-#title h1{ 
-    font-size: 3rem; 
-    color: pink; 
-    margin-top: 2.5rem;
-} 
-
- #info{ 
-    width: min(1000px, 90%); 
-    display:flex;
-    flex-direction:column;
-    justify-content: start;
- } 
-
-#info-title h2{
+#title h1 {
+    font-size: 3rem;
     color: pink;
-    font-size: 1.5rem; 
-    margin-bottom: 1rem; 
+    margin-top: 2.5rem;
 }
 
-#info-title p{ 
-    color: #ffffff; 
-    font-style: italic; 
-} 
+#info {
+    width: min(1000px, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
 
-#form{ 
-width: min(1000px, 80%); 
-margin: 0 auto 3rem;
-} 
+#info-title h2 {
+    color: pink;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 
-#form form{ 
+#info-title p {
+    color: #ffffff;
+    font-style: italic;
+}
+
+#form {
+    width: min(1000px, 80%);
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.8rem; 
-    background: #ffe6ef; 
-    padding: 0.8rem; 
-    border-radius: 8px; 
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04); 
-} 
+    gap: 0.8rem;
+    background: #ffe6ef;
+    padding: 0.8rem;
+    border-radius: 8px;
+    min-width: 400px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
 
-#form form > div{
+#form form>div {
 
-    display: flex; 
-    flex-direction: column; 
-} 
+    display: flex;
+    flex-direction: column;
+}
 
-#form label{ 
-    margin-bottom: 0.2rem; 
-    font-weight: 700; 
-    font-size: 0.8rem; 
+#form label {
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    font-size: 0.8rem;
     color: #7a002d;
-} 
+}
 
-#form input, #form select, #form textarea{ 
-    padding: 0.7rem; 
-    border: 1px solid #ff9cb5; 
-    border-radius: 8px; 
-    font-size: 0.8rem; 
-} 
+#form input,
+#form select,
+#form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ff9cb5;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    min-width: 100px;
 
-#form textarea{ 
-    resize: vertical; 
-    grid-column: 1 / -1; } 
-    
-#form button{ 
-    grid-column: 1 / -1; 
-    justify-self: start; 
-    padding: 0.6rem 1.2rem; 
-    background: #ff9cb5; 
-    color: #ffffff; 
-    border: none; 
-    border-radius: 8px; 
-    font-size: 0.9rem; 
-    cursor: pointer; 
-    box-shadow: 1px 1px 6px rgba(128, 56, 106, 0.4); 
-    transition: transform .15s ease; 
-} 
+}
 
-#form button:hover{
+#form textarea {
+    resize: vertical;
+    grid-column: 1 / -1;
+}
+
+#form button {
+    grid-column: 1 / -1;
+    justify-self: start;
+    padding: 0.6rem 1.2rem;
+    background: #ff9cb5;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px rgba(128, 56, 106, 0.4);
+    transition: transform .15s ease;
+}
+
+#form button:hover {
     transform: translateY(-2px);
 }
 
-.contact-cards p{
-   color: rgb(52, 28, 28);
-    font-size: 0.9rem; 
+#contact-cards p {
+    color: rgb(52, 28, 28);
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
-.contact-cards h2{
-   color: rgb(255, 255, 255);
-    font-size: 1rem; 
-    margin-bottom: 0.5rem; 
-
-}
-.contact-cards{ 
-    display: flex; 
-    flex-direction: column; 
-    justify-content:center
-  
-} 
-    
-.contacts{ 
-    display: flex; 
-    flex-direction: row; 
-    gap: 2rem;
-    justify-content:center
-    
-}
-    
-.contact{ 
-    background: #ffe6ef; 
-    border-radius: 10px; 
-    padding: 0.9rem; 
-    box-shadow: 0 2px 6px rgba(128, 56, 106, 0.4); 
-    flex: 1; text-align: center; 
-    justify-content:center
-    
-} 
-
-.contact h3{
-    color: #ee66aa;
-        font-size: 1rem;
-        justify-content:center
-}
-
-.contact-cards h5{
+#contact-cards h2 {
     color: rgb(255, 255, 255);
-        font-size: 1.5rem;
-        margin:0 0 .5rem 0;
-        
-} 
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 
- footer{ 
-    width: 100%; 
-    padding: 2rem 1rem; 
-    background: #fafafa; 
-    margin-top: auto; 
-    text-align:center; 
-    color:#ee66aa;
+}
+
+#contact-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center
+}
+
+.contact {
+    background: #ffe6ef;
+    border-radius: 10px;
+    padding: 0.9rem;
+    box-shadow: 0 2px 6px rgba(128, 56, 106, 0.4);
+    flex: 1;
+    text-align: center;
+    justify-content: center
+}
+
+.contact h3 {
+    color: #ee66aa;
+    font-size: 1rem;
+    justify-content: center
+}
+
+#contact-cards h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    margin: 0 0 .5rem 0;
+
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background: #fafafa;
+    margin-top: auto;
+    text-align: center;
+    color: #ee66aa;
+}
+
+#menu-btn-booking {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  
+}
+#menu-btn-booking img {
+    width: 100%;
+    height: 100%;
+    filter: invert();
+}
+
+
+@media screen and (max-width: 540px) {
+   #main-nav {
+        width: 25%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8px 0;
+    }
+    #main-nav ul li {
+        margin: 20px 0;
+    }
+    #main-nav ul li a {
+        font-size: 40px;
+    }
+    #main-nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+    }
+    #contacts {
+        width: 90%;
+        flex-direction: column;
+    }
+    #form form {
+        grid-template-columns: 1fr;
+        min-width: 300px;
+    }
+    #menu-btn-booking {
+        display: block;
+    }
+    #main-nav.show {
+        width: 80%;
+    }
+    #main-nav ul.show {
+        display: block;
+    }   
 }
