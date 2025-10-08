@@ -1,24 +1,37 @@
 # Bootcamp-Projekt
 
-## ToDO List
+**MisClean – Examination Project**
 
-### Main Objectives (mostly for me)
-[✅] responsive design
-[✅] keyboard navigation (works not best but works)
-[✅] following WCAG 2.2
-    [✅]  (letter color is to close to the color of the bg)
-    [✅]  keyboard acceasablity (could be done better)
-[] Form
-    [✅] Calculator for counting the price
-    [✅] Save in localStorage
-    [] Make a popup
-[] Write description of project in readme.md (here)
+A Examination project for a Full Stack Bootcamp course. A responsive cleaning service website with booking functionality, built using HTML, CSS, and JavaScript.
 
-[] Write a doc
-    [] Explain design & acceasblity choice made in the project
-    [] Explain how git was used in this project
-    [] Reflect on the way of working (how you organized yourselves within the group, what challenges you encountered and whether they are lessons you have learned for the next task).
+**Project Overview**
+MisClean is a fictional cleaning company website created as part of a examination assignment.  
+The project demonstrates responsive design, HTML structure, and interactive JavaScript functionality (form submission, popup confirmation, and `localStorage` data storage).
 
-### Not so important but fun
-[] Tracking user and storing the data
-[] make an intro to the page also called a splash
+**Main pages:**
+- `Index.html` - landing page with hero section.
+- `bokningar.html` - booking page with a functional form.
+- `main.js` - a popup page that confirms your booking and provides the cost of the services.
+
+**Features**
+- Responsive layout for mobile and desktop  
+- Interactive booking form with confirmation  
+- LocalStorage data saving  
+- Dynamic price calculation  
+- Confirmation popup after submission  
+- Accessible navigation
+
+**Run a demo**
+
+Live version: https://misclean-bootcampproject.netlify.app/
+
+**Known Issues**
+- "Tjänster" page is not interactive 
+- "Om Oss" page is not interactive 
+
+**Team**
+- Maksymilian ​Dymitr
+- Honzoda Sultanova
+
+
+
