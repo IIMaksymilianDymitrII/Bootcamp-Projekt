@@ -73,11 +73,11 @@ form.addEventListener("submit", (e) => {
       document.body.removeChild(popup);
     });
 
+    document.body.appendChild(popup);
     popup.appendChild(textPopup);
     popup.appendChild(dataPopup);
     popup.appendChild(pricePopup);
     popup.appendChild(closeBtn);
-    document.body.appendChild(popup);
   }
 
   const calculatePrice = (livingArea, service) => {
