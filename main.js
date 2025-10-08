@@ -25,23 +25,43 @@ const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 const dateInput = document.querySelector("#date");
-const serivceSelect = document.querySelector("#service");
+const serviceSelect = document.querySelector("#service"); 
 const livingAreaInput = document.querySelector("#living-area");
 const messageInput = document.querySelector("#message");
 
-
 form.addEventListener("submit", (e) => {
-  function ShowPopup(data, price) {
+  e.preventDefault();
 
+  function ShowPopup(data, price) {
     const popup = document.createElement("div");
     popup.classList.add("popup");
-    
+
     const textPopup = document.createElement("p");
-    textPopup.textContent =
-      "Tack för din bokning! Vi återkommer så snart som möjligt.";
+    textPopup.textContent = "Tack för din bokning! Vi återkommer så snart som möjligt.";
 
     const dataPopup = document.createElement("div");
-    popupData.textContent = data;
+    if (data.message === "") {
+     dataPopup.innerHTML = `
+      <strong>Namn:</strong> ${data.name}<br>
+      <strong>E-post:</strong> ${data.email}<br>
+      <strong>Telefon:</strong> ${data.phone}<br>
+      <strong>Datum:</strong> ${data.date}<br>
+      <strong>Yta:</strong> ${data.livingArea}<br>
+      <strong>Tjänst:</strong> ${data.service}<br>
+    `;  
+    }
+
+    else {
+        dataPopup.innerHTML = `
+          <strong>Namn:</strong> ${data.name}<br>
+          <strong>E-post:</strong> ${data.email}<br>
+          <strong>Telefon:</strong> ${data.phone}<br>
+          <strong>Datum:</strong> ${data.date}<br>
+          <strong>Yta:</strong> ${data.livingArea}<br>
+          <strong>Tjänst:</strong> ${data.service}<br>
+          <strong>Meddelande:</strong> ${data.message}
+        `;
+    }
 
     const pricePopup = document.createElement("p");
     pricePopup.textContent = `Pris för vald tjänst: ${price} Kr`;
@@ -50,17 +70,18 @@ form.addEventListener("submit", (e) => {
     closeBtn.textContent = "Stäng";
     closeBtn.classList.add("close-btn");
     closeBtn.addEventListener("click", () => {
-      document.body.removeChild(popup)
+      document.body.removeChild(popup);
     });
 
-    document.body.appendChild(popup);
     popup.appendChild(textPopup);
     popup.appendChild(dataPopup);
     popup.appendChild(pricePopup);
+    popup.appendChild(closeBtn);
+    document.body.appendChild(popup);
   }
 
   const calculatePrice = (livingArea, service) => {
-    const servicePrice = 0;
+    let servicePrice = 0;
 
     if (service === "hemstädning") {
       servicePrice = 100;
@@ -69,24 +90,24 @@ form.addEventListener("submit", (e) => {
     } else if (service === "företagsstädning") {
       servicePrice = 200;
     }
+
     return livingArea * servicePrice;
   };
-
-  e.preventDefault();
 
   const data = {
     name: nameInput.value,
     email: emailInput.value,
     phone: phoneInput.value,
     date: dateInput.value,
-    livingArea: livingAreaInput.value + "m²",
-    service: serivceSelect.value,
+    livingArea: livingAreaInput.value + " m²",
+    service: serviceSelect.value,
     message: messageInput.value,
   };
 
-  let bookingdata = JSON.parse(localStorage.getItem("bookings")) || [];
-  booking.push(data);
-  localStorage.setItem("bookings", JSON.stringify(bookingdata));
+  let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+  bookings.push(data);
+  localStorage.setItem("bookings", JSON.stringify(bookings));
 
-  ShowPopup(data, calculatePrice(livingAreaInput.value, serivceSelect.value));
+  const totalPrice = calculatePrice(parseFloat(livingAreaInput.value), serviceSelect.value);
+  ShowPopup(data, totalPrice);
 });

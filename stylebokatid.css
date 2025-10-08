@@ -235,6 +235,33 @@ footer {
     filter: invert();
 }
 
+.popup {
+    position: absolute;
+    background: #fff0f5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ff9cb5;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 100;
+    width: 300px;
+    height: auto;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: red;
+    padding: 4px;
+    color: white;
+    font: bold;
+    border-radius: 10%;
+    margin: 3px;
+}
+
 
 @media screen and (max-width: 540px) {
    #main-nav {
