@@ -66,8 +66,9 @@ main {
 
 #title h1 {
     font-size: 3rem;
-    color: pink;
+    color: #7a002d;
     margin-top: 2.5rem;
+    text-align: center;
 }
 
 #info {
@@ -78,13 +79,22 @@ main {
 }
 
 #info-title h2 {
-    color: pink;
+    color: #da101F;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
+#info-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #info-title p {
     color: #ffffff;
+    width: 600px;
     font-style: italic;
 }
 
@@ -107,7 +117,6 @@ main {
 }
 
 #form form>div {
-
     display: flex;
     flex-direction: column;
 }
@@ -236,6 +245,17 @@ footer {
         text-align: center;
         padding: 8px 0;
     }
+
+    #info-title h2 {
+        width: 95%;
+        font-size: 30px;        
+    }
+
+    #info-title p {
+        width: 90%;
+        font-size: 16px;
+    }
+    
     #main-nav ul li {
         margin: 20px 0;
     }

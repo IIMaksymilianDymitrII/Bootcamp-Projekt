@@ -1,5 +1,4 @@
 <html lang="sv">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +23,7 @@
   </header>
 
   <main>
+
     <section id="title">
       <h1>Boknings formulär</h1>
     </section>
@@ -48,15 +48,15 @@
           </div>
           <div>
             <label for="phone">Telefonnummer</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel"   id="phone" name="phone" required>
           </div>
           <div>
             <label for="service">Typ av tjänst</label>
             <select id="service" name="service" required>
               <option value="">Välj en tjänst</option>
-              <option value="hemstadning">Hemstädning</option>
-              <option value="flyttstadning">Flyttstädning</option>
-              <option value="foretagsstadning">Företagsstädning</option>
+              <option value="hemstädning">Hemstädning</option>
+              <option value="flyttstädning">Flyttstädning</option>
+              <option value="företagsstädning">Företagsstädning</option>
             </select>
           </div>
           <div>
@@ -71,7 +71,7 @@
             <label for="message">Meddelande</label>
             <textarea id="message" name="message" rows="4"></textarea>
           </div>
-          <button type="submit">Skicka</button>
+          <button onclick="PopupFunc()" id="submit-btn" type="submit">Skicka</button>
         </form>
       </section>
     </section>
