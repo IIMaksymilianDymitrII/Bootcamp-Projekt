@@ -1,117 +1,221 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-nav{
-display: flex;
-justify-content: center;
-margin: auto;
-position: absolute;
-top: 10px;
-width: 40%;
-height: 35px;
-backdrop-filter: blur(10px);
-border-radius: 2dvh;
-box-shadow: 1px 1px 10px #ffffff;
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
-nav ul{
+#menu-btn img {
+    width: 100%;
+    height: 100%;
+    filter: invert();
+}
 
+header {
+    width: 100%;
     display: flex;
-    gap: 3rem;
+    justify-content: center;
+    z-index: 10;
 }
 
-nav ul li{
-   list-style: none;
+nav {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    width: 480px;
+    height: 35px;
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px #ffffff;
 }
 
-nav ul li a{
-color: #fff;
-text-decoration:none;
-font-size: 20px;
+nav ul {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ff9cb5;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 1em;
+    background-image: url(IMG/herooverlay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(128, 56, 106, 0.4);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero {
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#hero h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+}
+
+#hero span {
+    color: pink;
+    animation-name: text;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 
 }
 
-nav ul li a:hover{
+@keyframes text {
+    0% {
+        color: #FC809F;
+    }
 
-color: #ff9cb5;
-}
+    25% {
+        color: #FF9CB5;
+    }
 
-.hero{
-width: 100%;
-height: 100vh;
-padding: 1em;
-background-image: url(herooverlay.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-color: rgba(128, 56, 106, 0.4);
-background-blend-mode: darken;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    50% {
+        color: #FFC9D7;
+    }
 
-}
+    75% {
+        color: #FF9CB5;
+    }
 
-.text{
+    95% {
+        color: #FFC9D7;
+    }
 
-width: 60%;
-height: 40vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap: 1em;
-}
-
-.text h1{
-    font-size: 5em;
-color:#fff
-
-}
-
-.text span{
-color: pink;
-animation-name: text;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-
-}
-
-@keyframes text{
-0%{color: #FC809F;}
-25%{color:#FF9CB5}
-50%{color: #FFC9D7;}
-75%{color: #FF9CB5;}
-95%{color: #FFC9D7;}
-100%{color: #FC809F}
+    100% {
+        color: #FC809F;
+    }
 }
 
 
-.text p{
+#hero p {
     color: #ffe9ef;
     font-size: 1em;
     font-style: italic;
+    text-align: center;
+    max-width: 600px;
 }
 
-.text button{
+#hero button {
+    text-decoration: none;
+    color: #ffffff;
     padding: 0.5em 2em;
     margin: 2em 0 0 0;
     background-color: #FC809F;
     border: none;
     border-radius: 10px;
-    color: #fafafa;
+    color: #ffffff;
     font-size: 1.5em;
     box-shadow: 1px 1px 3px #FC809F;
     transition: all .3s ease-in-out;
 }
 
-.text button:hover{
+#hero button:hover {
+    cursor: pointer;
     box-shadow: none;
     transform: scale(1.1)
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background: #fafafa;
+    margin-top: auto;
+    text-align: center;
+    color: #ee66aa;
+}
+
+
+@media screen and (max-width: 540px) {
+    #hero {
+        width: 280px;
+    }
+
+    #hero h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #hero p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    nav {
+        width: 25%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        padding: 9px 0;
+    }
+
+    nav ul {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 40px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav.show {
+        max-width: 91%;
+        width: 300px;
+    }
 }

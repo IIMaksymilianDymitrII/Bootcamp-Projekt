@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MisClean - A Bootcamp Project</title>
+    <link rel="shortcut icon" href="/IMG/Misclean_logo_bild_vit_utan_bakgrund.png" type="favicon">
 
-    <!--CSS LÄNK-->
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <!--HERO-->
-    <div class="hero">
+    <header>
         <nav>
-            <div class="logo">
-                <img src="" alt="" srcset="">
-            
-            </div>
-
-<!--NAVIGATIONS BAREN-->
-           <ul>
-<li><a href="">Hem</a></li>
-<li><a href="">Tjänster</a></li>
-<li><a href="">Boka tid</a></li>
-<li><a href="">Om Oss</a></li>
-</ul> 
+            <button id="menu-btn">
+                <img src="/IMG/hamburger.png" alt="Menu">
+            </button>
+            <ul>
+                <li><a href="/">Hem</a></li>
+                <li><a href="">Tjänster</a></li>
+                <li><a href="/bokningar.html">Boka tid</a></li>
+                <li><a href="">Om oss</a></li>
+            </ul>
         </nav>
-
-<!--BODY DELEN-->
-    <div class="text">
-<h1>MisClean <span>Service</span></h1>
-<p>Professionell städservice för hem och företag. Vi erbjuder städning fokus på kvalitet och kundnöjdhet!</p>
-<button>Boka tid</button>
-</div>
-    </div>
+    </header>
+    <main>
+        <div id="hero">
+            <h1>MisClean <span>Städservice</span></h1>
+            <p>Professionell städservice för hem och företag. 
+                Vi erbjuder hemstädning, flyttstädning och
+                företagsstädning med fokus på kvalitet och kundnöjdhet</p>
+            <button onclick="location.href='/bokningar.html'">
+                Boka tid
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>© MisClean - Alla rättigheter reserverade</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
+
 </html>
